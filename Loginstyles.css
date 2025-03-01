@@ -1,0 +1,248 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: #F2F6D0;
+  height: 100vh;
+}
+nav {
+  background-color: #443627;
+  height: 30px;
+    backdrop-filter: blur(2px);
+    color: #fff;
+    padding: 0;
+    top: 0;
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.hamburger {
+  width: 5%;
+    display: none; 
+    cursor: pointer;
+  padding: 10px;
+    font-size: 20px;
+    padding: 0;
+    color: #fff;
+}
+.avatar-link{
+  width:5%;
+  position: absolute;
+  top: 0;
+  left: 930px;
+}
+
+.avatar {
+  cursor:pointer;
+  width: 25px;   
+  height: 25px;   
+  border-radius: 50%;   
+  object-fit: cover;
+} 
+#profile{
+  background: #EFDCAB;
+}
+#about{
+  background: #D98324;
+  color: whitesmoke;
+}
+#about h2{
+  color: black;
+}
+#about p{
+  color: black;
+}
+#profile, #about{
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.profile-container, .center{
+    text-align: center;
+}
+
+.profile-container img {
+  border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.download {
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 15px;
+} 
+.form{
+  margin-top: 600px;
+  justify-items: center;
+}
+.container  {
+background-position: center;
+background-size: contain;
+  background:transparent;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center; 
+  display: flex;
+  flex-direction: column;
+}
+.form-box {
+  background-repeat: no-repeat;
+  background-position: center;
+background-size: contain;
+  background: blanchedalmond;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px gray;
+}
+h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+h2{
+  margin-bottom: 15px;
+  color: black;
+}
+p{
+  color: black;
+}
+p a{
+  text-decoration: none;
+}
+span{
+  color:black;
+}
+.input-group{
+  margin-bottom: 15px;
+}
+.input-group label {
+  color: black;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group .Name{
+  display: flex;
+}
+.space{
+  margin: 5px;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    transition: border-color 0.3s;
+}
+
+.button, button{
+  width: 100%;
+  padding:13px;
+  border-radius: 30px;
+  border:none;
+  background-color: black;
+  color:white;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.button a{
+  text-decoration:none;
+  color:white;
+}
+.social-icons img{
+width: 30px;
+margin: 10px 3px;
+box-shadow: 0 0 20px 0 #7f7f7f3d;
+cursor: pointer;
+border-radius: 50
+}
+button:hover {
+    background-color: #2575fc; 
+    transform: translateY(-2px); 
+}
+@media (max-width: 768px){
+    
+    nav ul {
+      background: rgba(68, 54, 39, 0.5);
+        text-align:center;
+        display: none;
+        flex-direction: column;
+      width:50%;
+      border-radius: 0 0 15px;
+      height: 200px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+    nav li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    nav a {
+      margin:0;
+      padding:0;
+      color:white;
+        font-weight: 500px;
+        font-size: 20px;
+        width: 100%;a
+        text-align: center;
+      transition: 0.3 all ease;
+    }
+  nav ul li:hover{
+    border: none;
+    border-radius: 8px;
+    padding: 10px 66px 10px 65px;
+    background: rgba(217, 131, 36, 0.8);
+  }
+  .avatar-link {
+  left: 330px;
+}  
+  .form {
+    margin-top: 50px;
+  }
+}
