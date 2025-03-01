@@ -54,7 +54,7 @@ document.getElementById("show-login").addEventListener("click", function() {
         const storedPassword = localStorage.getItem('registerPassword');
 
         if (loginEmail === storedEmail && loginPassword === storedPassword) {
-            window.location.href = "LogInProject.html";
+            window.location.href = "./index.html";
         } else {
             alert("Invalid email or password");
         }
